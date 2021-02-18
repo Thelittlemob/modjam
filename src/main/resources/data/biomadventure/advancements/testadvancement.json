@@ -1,0 +1,45 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.testadvancement.title",
+            "color": "red",
+            "italic": true,
+            "underlined": true,
+            "strikethrough": false
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.testadvancement.desc",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false
+        },
+        "icon": {
+            "item": "minecraft:sponge"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "nextloca": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:plains",
+                "smokey": false
+            }
+        }
+    },
+    "requirements": [
+        [
+            "nextloca"
+        ]
+    ],
+    "rewards": {
+        "experience": 100000
+    },
+    "parent": "biomadventure:root"
+}

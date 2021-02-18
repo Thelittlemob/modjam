@@ -1,0 +1,40 @@
+modLoader="javafml" #mandatory
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+
+# A URL to refer people to when problems occur with this mod
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+
+[[mods]]
+modId="biomadventure"
+#version="${file.jarVersion}"
+version="0.0.1" #mandatory
+displayName="Biomadventure"
+
+# A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+
+logoFile="biomadventure.png"
+credits="Pas de crédits pour le moment" 
+authors="The_little_mob"
+description='''
+Dans ce mod, lancez-vous au défi de découvrir de tous nouveaux blocs et items spécifique à chaque biomes !
+
+Je vous souhaite donc une bonne aventure !
+'''
+
+[[dependencies.biomadventure]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.biomadventure]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"

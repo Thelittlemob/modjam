@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "biomadventure:block/geode" },
+        "facing=south": { "model": "biomadventure:block/geode", "y": 180 },
+        "facing=west":  { "model": "biomadventure:block/geode", "y": 270 },
+        "facing=east":  { "model": "biomadventure:block/geode", "y": 90 }
+    }
+}

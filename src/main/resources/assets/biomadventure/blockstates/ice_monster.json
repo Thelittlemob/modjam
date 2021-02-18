@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "biomadventure:block/ice_monster" },
+        "facing=south": { "model": "biomadventure:block/ice_monster", "y": 180 },
+        "facing=west":  { "model": "biomadventure:block/ice_monster", "y": 270 },
+        "facing=east":  { "model": "biomadventure:block/ice_monster", "y": 90 }
+    }
+}

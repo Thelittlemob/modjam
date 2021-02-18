@@ -1,0 +1,45 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.root.title",
+            "color": "gold",
+            "bold": true,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.root.desc",
+            "color": "blue",
+            "bold": true,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false
+        },
+        "icon": {
+            "item": "minecraft:grass_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "StonePlacer": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:stone"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "StonePlacer"
+        ]
+    ],
+    "rewards": {
+        "experience": 1000
+    }
+}

@@ -1,0 +1,26 @@
+{
+	"item.biomadventure.geode": "Geode",
+	"item.biomadventure.amethyste": "Amethyste",
+	"item.biomadventure.citrine": "Citrine",
+	
+	"block.biomadventure.geode_block": "Geode block",
+	"block.biomadventure.geode": "Geode",
+	
+	"item.biomadventure.desert_rose": "Desert rose",
+	"block.biomadventure.desert_rose_block": "Desert rose block",
+	
+	"item.biomadventure.nautilus_fossil": "Nautilus fossil",
+	"item.biomadventure.trilobite_fossil": "Trilobite fossil",
+	"block.biomadventure.fossil_block": "Fossil block",
+	
+	"block.biomadventure.mystery_ice": "Mystery ice",
+	"block.biomadventure.ice_monster": "Ice monster",
+	
+	"itemGroup.biomadventure_blocks": "Biomadventure : Blocks",
+	"itemGroup.biomadventure_materials": "Biomadventure : Materials",
+	
+	"biomadventure.advancements.adventure.root.title": "Stone Placer",
+	"biomadventure.advancements.adventure.root.desc": "Place a stone block !",
+	"biomadventure.advancements.adventure.testadvancement.title": "Plains Finder",
+	"biomadventure.advancements.adventure.testadvancement.desc": "Find a plains biome !"
+}

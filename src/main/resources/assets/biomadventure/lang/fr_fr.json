@@ -1,0 +1,26 @@
+{
+	"item.biomadventure.geode": "Géode",
+	"item.biomadventure.amethyste": "Améthyste",
+	"item.biomadventure.citrine": "Citrine",
+	
+	"block.biomadventure.geode_block": "Bloc de géode",
+	"block.biomadventure.geode": "Géode",
+	
+	"item.biomadventure.desert_rose": "Rose des sables",
+	"block.biomadventure.desert_rose_block": "Block de rose des sables",
+	
+	"item.biomadventure.nautilus_fossil": "Fossile de Nautilus",
+	"item.biomadventure.trilobite_fossil": "Fossile de Trilobite",
+	"block.biomadventure.fossil_block": "Bloc de fossil",
+	
+	"block.biomadventure.mystery_ice": "Glace mystère",
+	"block.biomadventure.ice_monster": "Monstre de glace",
+	
+	"itemGroup.biomadventure_blocks": "Biomadventure : Blocs",
+	"itemGroup.biomadventure_materials": "Biomadventure : Matériaux",
+	
+	"biomadventure.advancements.adventure.root.title": "Placeur de pierre",
+	"biomadventure.advancements.adventure.root.desc": "Placez un block de pierre !",
+	"biomadventure.advancements.adventure.testadvancement.title": "Chercheur de plaines",
+	"biomadventure.advancements.adventure.testadvancement.desc": "Trouvez un biome plaine !"
+}
