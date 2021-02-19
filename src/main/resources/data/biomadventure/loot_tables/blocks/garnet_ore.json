@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "biomadventure:geode_block",
+              "name": "biomadventure:garnet_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -28,8 +28,13 @@
             },
             {
               "type": "minecraft:item",
-              "name": "biomadventure:geode",
+              "name": "biomadventure:garnet",
               "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                },
                 {
                   "function": "minecraft:explosion_decay"
                 }

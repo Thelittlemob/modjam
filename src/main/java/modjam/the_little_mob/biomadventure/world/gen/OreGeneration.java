@@ -68,6 +68,22 @@ public class OreGeneration {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
 						System.out.println("\nICE !!\n");
 					}
+					else if(ore == OreType.GARNET && biome.getCategory().equals(Biome.Category.JUNGLE)) {
+						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
+						System.out.println("\nGARNET !!\n");
+					}
+					else if(ore == OreType.DYE && biome.getCategory().equals(Biome.Category.MESA)) {
+						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
+						System.out.println("\nDYE !!\n");
+					}
+					else if(ore == OreType.MUSHROOM && biome.getCategory().equals(Biome.Category.MUSHROOM)) {
+						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
+						System.out.println("\nMUSHROOM !!\n");
+					}
+					else if(ore == OreType.SLIME && biome.getCategory().equals(Biome.Category.SWAMP)) {
+						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
+						System.out.println("\nSLIME !!\n");
+					}
 				}
 			}
 		}

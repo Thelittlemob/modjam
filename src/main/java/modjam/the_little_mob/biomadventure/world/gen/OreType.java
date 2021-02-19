@@ -8,7 +8,11 @@ public enum OreType {
 	DESERT_ROSE(BlockInit.DESERT_ROSE_BLOCK.get(), 8, 30, 100,64, 16),
 	GEODE(BlockInit.GEODE_BLOCK.get(), 4, 10, 100,64, 15),
 	FOSSIL(BlockInit.FOSSIL_BLOCK.get(), 4, 30, 80,64, 18),
-	ICE(BlockInit.MYSTERY_ICE.get(), 4, 30, 80,64, 18);
+	ICE(BlockInit.MYSTERY_ICE.get(), 4, 30, 80,64, 18),
+	GARNET(BlockInit.GARNET_ORE.get(), 5, 15, 60,64, 15),
+	DYE(BlockInit.DYE_ORE.get(), 5, 20, 100,64, 15),
+	MUSHROOM(BlockInit.MUSHROOM_ORE.get(), 8, 20, 60,64, 20),
+	SLIME(BlockInit.SLIME_ORE.get(), 6, 20, 50,64, 15);
 	
 	private final Block block;
 	private final int maxVeinSize;

@@ -7,7 +7,7 @@
 	"block.biomadventure.geode": "Géode",
 	
 	"item.biomadventure.desert_rose": "Rose des sables",
-	"block.biomadventure.desert_rose_block": "Block de rose des sables",
+	"block.biomadventure.desert_rose_block": "Bloc de rose des sables",
 	
 	"item.biomadventure.nautilus_fossil": "Fossile de Nautilus",
 	"item.biomadventure.trilobite_fossil": "Fossile de Trilobite",
@@ -15,6 +15,15 @@
 	
 	"block.biomadventure.mystery_ice": "Glace mystère",
 	"block.biomadventure.ice_monster": "Monstre de glace",
+	
+	"item.biomadventure.garnet": "Grenat",
+	"block.biomadventure.garnet_ore": "Minerais de Grenat",
+	
+	"block.biomadventure.dye_ore": "Minerais de colorant",
+	
+	"block.biomadventure.mushroom_ore": "Minerais de champignon",
+	
+	"block.biomadventure.slime_ore": "Minerais de slime",
 	
 	"itemGroup.biomadventure_blocks": "Biomadventure : Blocs",
 	"itemGroup.biomadventure_materials": "Biomadventure : Matériaux",

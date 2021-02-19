@@ -16,6 +16,15 @@
 	"block.biomadventure.mystery_ice": "Mystery ice",
 	"block.biomadventure.ice_monster": "Ice monster",
 	
+	"item.biomadventure.garnet": "Garnet",
+	"block.biomadventure.garnet_ore": "Garnet ore",
+	
+	"block.biomadventure.dye_ore": "Dye ore",
+	
+	"block.biomadventure.mushroom_ore": "Mushroom ore",
+	
+	"block.biomadventure.slime_ore": "Slime ore",
+	
 	"itemGroup.biomadventure_blocks": "Biomadventure : Blocks",
 	"itemGroup.biomadventure_materials": "Biomadventure : Materials",
 	

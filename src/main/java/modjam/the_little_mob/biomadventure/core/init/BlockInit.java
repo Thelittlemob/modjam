@@ -6,6 +6,7 @@ import modjam.the_little_mob.biomadventure.Biomadventure;
 import modjam.the_little_mob.biomadventure.common.blocks.CustomBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -21,7 +22,7 @@ public class BlockInit {
 
 	//ORE BLOCKS
 	public static final RegistryObject<Block> DESERT_ROSE_BLOCK = BLOCKS
-			.register("desert_rose_block", () -> new Block(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.SAND)
+			.register("desert_rose_block", () -> new Block(AbstractBlock.Properties.from(Blocks.SAND)
 					.harvestTool(ToolType.SHOVEL)
 					.harvestLevel(1)
 					.setRequiresTool()
@@ -46,12 +47,44 @@ public class BlockInit {
 					.sound(SoundType.BONE)));
 
 	public static final RegistryObject<Block> MYSTERY_ICE = BLOCKS
-			.register("mystery_ice", () -> new Block(AbstractBlock.Properties.create(Material.ICE, MaterialColor.ICE)
+			.register("mystery_ice", () -> new Block(AbstractBlock.Properties.from(Blocks.PACKED_ICE)
 					.harvestTool(ToolType.PICKAXE)
 					.harvestLevel(2)
 					.setRequiresTool()
 					.hardnessAndResistance(4.0f, 6.0f)
 					.sound(SoundType.GLASS)));
+
+	public static final RegistryObject<Block> GARNET_ORE = BLOCKS
+			.register("garnet_ore", () -> new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.STONE)
+					.harvestTool(ToolType.PICKAXE)
+					.harvestLevel(2)
+					.setRequiresTool()
+					.hardnessAndResistance(3.0f, 4.0f)
+					.sound(SoundType.STONE)));
+
+	public static final RegistryObject<Block> DYE_ORE = BLOCKS
+			.register("dye_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.TERRACOTTA)
+					.harvestTool(ToolType.PICKAXE)
+					.harvestLevel(1)
+					.setRequiresTool()
+					.hardnessAndResistance(2.0f, 4.0f)
+					.sound(SoundType.BASALT)));
+
+	public static final RegistryObject<Block> MUSHROOM_ORE = BLOCKS
+			.register("mushroom_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.STONE)
+					.harvestTool(ToolType.PICKAXE)
+					.harvestLevel(0)
+					.setRequiresTool()
+					.hardnessAndResistance(1.0f, 3.0f)
+					.sound(SoundType.STONE)));
+
+	public static final RegistryObject<Block> SLIME_ORE = BLOCKS
+			.register("slime_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.SLIME_BLOCK)
+					.harvestTool(ToolType.PICKAXE)
+					.harvestLevel(1)
+					.setRequiresTool()
+					.hardnessAndResistance(2.0f, 3.0f)
+					.sound(SoundType.SLIME)));
 	
 	//CUSTOM BLOCK
 	public static final RegistryObject<CustomBlock> GEODE = BLOCKS
