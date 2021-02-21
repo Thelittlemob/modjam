@@ -8,7 +8,7 @@ license="All rights reserved"
 [[mods]]
 modId="biomadventure"
 #version="${file.jarVersion}"
-version="1.0.0" #mandatory
+version="1.0.1" #mandatory
 displayName="Biomadventure"
 
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
