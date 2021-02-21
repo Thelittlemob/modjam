@@ -1,0 +1,43 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.fossil_trilobite.title",
+            "color": "white"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.fossil_trilobite.desc",
+            "color": "white"
+        },
+        "icon": {
+            "item": "biomadventure:trilobite_fossil"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "trilobite_fossil": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "biomadventure:trilobite_fossil",
+                        "count": {
+                        "min":1,
+                        "max":64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trilobite_fossil"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:fossil"
+}

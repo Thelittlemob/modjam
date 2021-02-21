@@ -1,0 +1,84 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.mountains.title",
+            "color": "gray"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.mountains.desc",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:stone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:mountains"
+            }
+        },
+        "snowyMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_mountains"
+            }
+        },
+        "mountainEdge": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:mountain_edge"
+            }
+        },
+        "woodedMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:wooded_mountains"
+            }
+        },
+        "gravellyMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:gravelly_mountains"
+            }
+        },
+        "taigaMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:taiga_mountains"
+            }
+        },
+        "snowyTaigaMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga_mountains"
+            }
+        },
+        "modifiedGravellyMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:modified_gravelly_mountains"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mountains",
+            "snowyMountains",
+            "mountainEdge",
+            "woodedMountains",
+            "gravellyMountains",
+            "taigaMountains",
+            "snowyTaigaMountains",
+            "modifiedGravellyMountains"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

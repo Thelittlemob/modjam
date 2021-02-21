@@ -32,7 +32,7 @@ public class OreGeneration {
 	
 	@SubscribeEvent
 	public static void generateOres(FMLLoadCompleteEvent event) {
-		System.out.println("GENERATION !!\n\n\n");
+		//System.out.println("GENERATION !!\n\n\n");
 		for(OreType ore: OreType.values()) {
 			OreFeatureConfig oreFeatureConfig = new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ore.getBlock().getDefaultState(), ore.getMaxVeinSize());
 			@SuppressWarnings("rawtypes")
@@ -45,44 +45,35 @@ public class OreGeneration {
 					.square()
 					.func_242731_b(ore.getNbrVein()));
 
-			System.out.println("\n\nOre = "+ ore + "\n\n");
+			//System.out.println("Ore = "+ ore);
 			for(Biome biome: ForgeRegistries.BIOMES) {
 				if(!(biome.getCategory().equals(Biome.Category.NETHER) || biome.getCategory().equals(Biome.Category.THEEND))) {
 					RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, biome.getRegistryName());
 					Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-					System.out.println("Biome = "+ biome +" Category = "+biome.getCategory()+" KEY = "+ key +" TYPE = "+ types);
 					if(ore == OreType.GEODE && (types.contains(BiomeDictionary.Type.MOUNTAIN) || biome.getCategory().equals(Biome.Category.EXTREME_HILLS))) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nGEODE !!\n");
 					}
 					else if(ore == OreType.DESERT_ROSE && biome.getCategory().equals(Biome.Category.DESERT)) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nROSE !!\n");
 					}
 					else if(ore == OreType.FOSSIL && biome.getCategory().equals(Biome.Category.FOREST)) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nFOSSIL !!\n");
 					}
 					else if(ore == OreType.ICE && (types.contains(BiomeDictionary.Type.SNOWY) || biome.getCategory().equals(Biome.Category.ICY))) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nICE !!\n");
 					}
 					else if(ore == OreType.GARNET && biome.getCategory().equals(Biome.Category.JUNGLE)) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nGARNET !!\n");
 					}
 					else if(ore == OreType.DYE && biome.getCategory().equals(Biome.Category.MESA)) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nDYE !!\n");
 					}
 					else if(ore == OreType.MUSHROOM && biome.getCategory().equals(Biome.Category.MUSHROOM)) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nMUSHROOM !!\n");
 					}
 					else if(ore == OreType.SLIME && biome.getCategory().equals(Biome.Category.SWAMP)) {
 						addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, WorldGenRegistries.CONFIGURED_FEATURE.getOrDefault(ore.getBlock().getRegistryName()));
-						System.out.println("\nSLIME !!\n");
 					}
 				}
 			}

@@ -2,44 +2,37 @@
     "display": {
         "title": {
             "translate": "biomadventure.advancements.adventure.root.title",
-            "color": "gold",
+            "color": "dark_aqua",
             "bold": true,
             "italic": false,
-            "underlined": false,
+            "underlined": true,
             "strikethrough": false,
             "obfuscated": false
         },
         "description": {
             "translate": "biomadventure.advancements.adventure.root.desc",
-            "color": "blue",
-            "bold": true,
-            "underlined": false,
-            "strikethrough": false,
-            "obfuscated": false
+            "color": "gray",
+            "bold": true
         },
         "icon": {
-            "item": "minecraft:grass_block"
+            "item": "biomadventure:desert_rose_block"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false,
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "StonePlacer": {
-            "trigger": "minecraft:placed_block",
+        "Auto": {
+            "trigger": "minecraft:location",
             "conditions": {
-                "block": "minecraft:stone"
+                "dimension": "overworld"
             }
         }
     },
     "requirements": [
         [
-            "StonePlacer"
+            "Auto"
         ]
-    ],
-    "rewards": {
-        "experience": 1000
-    }
+    ]
 }

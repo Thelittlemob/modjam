@@ -1,0 +1,42 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.mushroom.title",
+            "color":"light_purple"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.mushroom.desc",
+            "color":"light_purple"
+        },
+        "icon": {
+            "item": "minecraft:mycelium"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "mushroomFields": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:mushroom_fields"
+            }
+        },
+        "mushroomFieldShore": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:mushroom_field_shore"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mushroomFields",
+            "mushroomFieldShore"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

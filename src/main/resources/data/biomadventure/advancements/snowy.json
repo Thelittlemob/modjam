@@ -1,0 +1,91 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.snowy.title",
+            "color": "aqua"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.snowy.desc",
+            "color": "aqua"
+        },
+        "icon": {
+            "item": "minecraft:snow_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "frozenOcean": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:frozen_ocean"
+            }
+        },
+        "frozenRiver": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:frozen_river"
+            }
+        },
+        "snowyTundra": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_tundra"
+            }
+        },
+        "snowyMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_mountains"
+            }
+        },
+        "snowyBeach": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_beach"
+            }
+        },
+        "snowyTaiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga"
+            }
+        },
+        "snowyTaigaHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga_hills"
+            }
+        },
+        "iceSpikes": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:ice_spikes"
+            }
+        },
+        "snowyTaigaMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga_mountains"
+            }
+        }
+    },
+    "requirements": [
+        [
+        	"frozenOcean",
+            "frozenRiver",
+            "snowyTundra",
+            "snowyMountains",
+            "snowyBeach",
+            "snowyTaiga",
+            "snowyTaigaHills",
+            "iceSpikes",
+            "snowyTaigaMountains"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

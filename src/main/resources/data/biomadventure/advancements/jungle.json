@@ -1,0 +1,77 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.jungle.title",
+            "color": "dark_green"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.jungle.desc",
+            "color": "dark_green"
+        },
+        "icon": {
+            "item": "minecraft:jungle_sapling"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "jungle": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:jungle"
+            }
+        },
+        "jungleHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:jungle_hills"
+            }
+        },
+        "jungleEdge": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:jungle_edge"
+            }
+        },
+        "modifiedJungle": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:modified_jungle"
+            }
+        },
+        "modifiedJungleEdge": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:modified_jungle_edge"
+            }
+        },
+        "bambooJungle": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:bamboo_jungle"
+            }
+        },
+        "bambooJungleHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:bamboo_jungle_hills"
+            }
+        }
+    },
+    "requirements": [
+        [
+        	"jungle",
+            "jungleHills",
+            "jungleEdge",
+            "modifiedJungle",
+            "modifiedJungleEdge",
+            "bambooJungle",
+            "bambooJungleHills"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

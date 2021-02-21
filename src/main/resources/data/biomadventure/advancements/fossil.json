@@ -1,0 +1,58 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.fossil.title",
+            "color": "green"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.fossil.desc",
+            "color": "green"
+        },
+        "icon": {
+            "item": "biomadventure:fossil_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "nautilus": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "biomadventure:nautilus_fossil",
+                        "count": {
+                        "min":1,
+                        "max":64
+                        }
+                    }
+                ]
+            }
+        },
+        "trilobite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "biomadventure:trilobite_fossil",
+                        "count": {
+                        "min":1,
+                        "max":64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "nautilus",
+            "trilobite"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:forest"
+}

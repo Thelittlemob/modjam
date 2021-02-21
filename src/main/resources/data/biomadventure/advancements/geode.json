@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.geode.title",
+            "color": "gray"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.geode.desc",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "biomadventure:geode_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "geode": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "biomadventure:geode",
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "geode"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:mountains"
+}

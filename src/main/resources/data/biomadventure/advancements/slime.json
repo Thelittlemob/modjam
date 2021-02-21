@@ -1,0 +1,42 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.slime.title",
+            "color":"green"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.slime.desc",
+            "color":"green"
+        },
+        "icon": {
+            "item": "minecraft:lily_pad"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "swamp": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:swamp"
+            }
+        },
+        "swampHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:swamp_hills"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "swampHills",
+            "swamp"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

@@ -1,0 +1,98 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.taiga.title",
+            "color": "green"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.taiga.desc",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:spruce_sapling"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "taiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:taiga"
+            }
+        },
+        "taigaHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:taiga_hills"
+            }
+        },
+        "snowyTaiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga"
+            }
+        },
+        "snowyTaigaHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga_hills"
+            }
+        },
+        "giantTreeTaiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:giant_tree_taiga"
+            }
+        },
+        "giantTreeTaigaHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:giant_tree_taiga_hills"
+            }
+        },
+        "taigaMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:taiga_mountains"
+            }
+        },
+        "snowyTaigaMountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga_mountains"
+            }
+        },
+        "giantSpruceTaiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:giant_spruce_taiga"
+            }
+        },
+        "giantSpruceTaigaHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:giant_spruce_taiga_hills"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "taiga",
+            "taigaHills",
+            "snowyTaiga",
+            "snowyTaigaHills",
+            "giantTreeTaiga",
+            "giantTreeTaigaHills",
+            "taigaMountains",
+            "snowyTaigaMountains",
+            "giantSpruceTaiga",
+            "giantSpruceTaigaHills"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

@@ -1,0 +1,49 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.desert.title",
+            "color": "yellow"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.desert.desc",
+            "color": "yellow"
+        },
+        "icon": {
+            "item": "minecraft:sand"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "desert": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:desert"
+            }
+        },
+        "desertHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:desert_hills"
+            }
+        },
+        "desertLakes": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:desert_lakes"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "desert",
+            "desertHills",
+            "desertLakes"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

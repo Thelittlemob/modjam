@@ -8,7 +8,7 @@ license="All rights reserved"
 [[mods]]
 modId="biomadventure"
 #version="${file.jarVersion}"
-version="0.0.1" #mandatory
+version="1.0.0" #mandatory
 displayName="Biomadventure"
 
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
@@ -17,10 +17,10 @@ displayName="Biomadventure"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
 
 logoFile="biomadventure.png"
-credits="Pas de crédits pour le moment" 
+credits="Pas de crÃ©dits pour le moment" 
 authors="The_little_mob"
 description='''
-Dans ce mod, lancez-vous au défi de découvrir de tous nouveaux blocs et items spécifique à chaque biomes !
+Dans ce mod, lancez-vous au dÃ©fi de dÃ©couvrir de tous nouveaux blocs et items spÃ©cifique Ã  chaque biomes !
 
 Je vous souhaite donc une bonne aventure !
 '''

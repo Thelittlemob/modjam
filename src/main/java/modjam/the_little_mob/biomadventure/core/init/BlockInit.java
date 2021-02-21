@@ -85,6 +85,16 @@ public class BlockInit {
 					.setRequiresTool()
 					.hardnessAndResistance(2.0f, 3.0f)
 					.sound(SoundType.SLIME)));
+
+	//BLOCK
+	
+	public static final RegistryObject<Block> BIOMULTI_BLOCK = BLOCKS
+			.register("biomulti_block", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)
+					.harvestTool(ToolType.PICKAXE)
+					.harvestLevel(2)
+					.setRequiresTool()
+					.hardnessAndResistance(4.0f, 6.0f)
+					.sound(SoundType.METAL)));
 	
 	//CUSTOM BLOCK
 	public static final RegistryObject<CustomBlock> GEODE = BLOCKS

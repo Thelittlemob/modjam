@@ -1,0 +1,43 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.biomulti_block.title",
+            "color": "gold"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.biomulti_block.desc",
+            "color": "gold"
+        },
+        "icon": {
+            "item": "biomadventure:biomulti_block"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "biomultiBlock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "biomadventure:biomulti_block",
+                        "count": {
+                        "min":1,
+                        "max":64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "biomultiBlock"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

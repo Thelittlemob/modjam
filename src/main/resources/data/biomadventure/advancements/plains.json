@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.plains.title"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.plains.desc"
+        },
+        "icon": {
+            "item": "minecraft:grass_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "plains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:plains"
+            }
+        },
+        "sunflowerPlains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:sunflower_plains"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "plains",
+            "sunflowerPlains"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

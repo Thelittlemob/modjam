@@ -1,0 +1,91 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.forest.title",
+            "color": "green"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.forest.desc",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:forest"
+            }
+        },
+        "woodedHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:wooded_hills"
+            }
+        },
+        "birchForest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:birch_forest"
+            }
+        },
+        "birchForestHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:birch_forest_hills"
+            }
+        },
+        "darkForest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:dark_forest"
+            }
+        },
+        "flowerForest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:flower_forest"
+            }
+        },
+        "tallBirchForest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:tall_birch_forest"
+            }
+        },
+        "tallBirchHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:tall_birch_hills"
+            }
+        },
+        "darkForestHills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:dark_forest_hills"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "forest",
+            "woodedHills",
+            "birchForest",
+            "birchForestHills",
+            "flowerForest",
+            "tallBirchForest",
+            "tallBirchHills",
+            "darkForestHills",
+            "darkForest"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:root"
+}

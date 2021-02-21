@@ -1,0 +1,43 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.fossil_nautilus.title",
+            "color": "white"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.fossil_nautilus.desc",
+            "color": "white"
+        },
+        "icon": {
+            "item": "biomadventure:nautilus_fossil"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "nautilus_fossil": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "biomadventure:nautilus_fossil",
+                        "count": {
+                        "min":1,
+                        "max":64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "nautilus_fossil"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "biomadventure:fossil"
+}

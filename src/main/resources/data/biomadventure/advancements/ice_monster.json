@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "translate": "biomadventure.advancements.adventure.ice_monster.title",
+            "color": "aqua"
+        },
+        "description": {
+            "translate": "biomadventure.advancements.adventure.ice_monster.desc",
+            "color": "aqua"
+        },
+        "icon": {
+            "item": "biomadventure:ice_monster"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "ice_monster": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "biomadventure:ice_monster",
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ice_monster"
+        ]
+    ],
+    "parent": "biomadventure:mystery_ice"
+}

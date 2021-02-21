@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "biomadventure:block/biomulti_block" }
+    }
+}

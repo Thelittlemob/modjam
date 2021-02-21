@@ -63,6 +63,12 @@ public class ItemInit {
 			.register("slime_ore", () -> new BlockItem(BlockInit.SLIME_ORE.get(), 
 					new Item.Properties().group(Biomadventure.BIOMADVENTURE_GROUP_BLOCKS)));
 	
+	//BLOCK ITEM
+	
+	public static final RegistryObject<BlockItem> BIOMULTI_BLOCK = ITEMS
+			.register("biomulti_block", () -> new BlockItem(BlockInit.BIOMULTI_BLOCK.get(), 
+					new Item.Properties().group(Biomadventure.BIOMADVENTURE_GROUP_BLOCKS)));
+	
 	//CUSTOM BLOCKS
 	public static final RegistryObject<BlockItem> GEODE = ITEMS
 			.register("geode", () -> new BlockItem(BlockInit.GEODE.get(),
